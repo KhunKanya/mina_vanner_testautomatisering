@@ -1,12 +1,12 @@
 
 # 🧪 Friends Contact – Web Test Automation Project
-### Veckouppgift 6 (E2E + BDD använder behave och Playwright)
+## Veckouppgift 6 (E2E + BDD använder behave och Playwright)
 
----------
+------
 
 
 
-## 🚀 Projektöversikt
+###  Projektöversikt
 
 ### Detta projekt syftar till att automatisera tester för funktionaliteten kring hantering av vänner i webbapplikationen. Testerna säkerställer att användaren kan:
 ### 🔗 Web section: [Link](https://forverkliga.se/JavaScript/my-contacts/#/).
@@ -36,6 +36,9 @@
 
 ``` text
 
+├── .github/
+│   └── workflows/
+│       └── main.yml
 ├── src/
 │   ├── features/
 │   │   ├── add_contact.feature
