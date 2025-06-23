@@ -36,6 +36,9 @@
 
 ``` text
 
+├── .github/
+│   └── workflows/
+│       └── main.yml
 ├── src/
 │   ├── features/
 │   │   ├── add_contact.feature
@@ -54,3 +57,31 @@
 └── README.md
 ```
 
+## 셋업 및 실행
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/KhunKanya/mina_vanner_testautomatisering.git
+   cd mina_vanner_testautomatisering
+   ```
+
+2. **Create a virtual environment (recommended):**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Install Playwright browsers:**
+   ```bash
+   playwright install --with-deps
+   ```
+
+5. **Run tests:**
+   ```bash
+   behave src/features
+   ```
