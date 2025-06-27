@@ -1,59 +1,53 @@
 
-# 🧪 Friends Contact – Web Test Automation Project
-## Veckouppgift 6 (E2E + BDD använder behave och Playwright)
+# 🧪 Mina Vänner - Test Automation Project  
+**End-to-End Web Automation with Playwright & Behave (BDD)**  
+[![Playwright](https://img.shields.io/badge/Playwright-2.4+-45ba4b?logo=playwright)](https://playwright.dev)
+[![Behave](https://img.shields.io/badge/Behave-1.2.7-green)](https://behave.readthedocs.io/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://python.org)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI/CD-black?logo=githubactions)](https://github.com/features/actions)
 
-------
+Automated test solution for contact management features, implementing BDD methodology with industry-standard tools. Validates critical user workflows for friend management systems.
 
+## 🔍 Project Overview
+Automates testing of core functionalities:
+- **Contact Management** (Add/View/Edit/Delete)
+- **Case-Insensitive Search**
+- **Data Validation**
+- **UI Responsiveness**
 
+Implements all user stories with Gherkin scenarios and CI/CD pipeline.
 
-###  Projektöversikt
-
-### Detta projekt syftar till att automatisera tester för funktionaliteten kring hantering av vänner i webbapplikationen. Testerna säkerställer att användaren kan:
-### 🔗 Web section: [Link](https://forverkliga.se/JavaScript/my-contacts/#/).
-
-- ### Se en lista över sina vänner.
-- ### Ändra information om en vän.
-- ### Lägga till nya kontakter.
-- ### Ta bort vänner.
-- ### Söka efter vänner oberoende av stora eller små bokstäver.
-
-## 📋 User Stories
-
-- ###  **US01**: Som användare vill jag kunna se en lista över mina vänner, så att jag kan kontakta mina vänner.
-- ###  **US02**: Som användare vill jag kunna ändra information, så att jag kan uppdatera kontaktuppgifter för mina vänner.
-- ###  **US03**: Som användare vill jag kunna lägga till nya kontakter, så att jag kan hålla koll på mina vänner.
-- ###  **US04**: Som användare vill jag kunna ta bort en vän från listan, så att jag kan hålla listan uppdaterad.
-- ###  **US05**: Som användare vill jag kunna söka efter mina vänner på namn eller e-post, så att jag kan hitta dem oavsett om jag använder stora eller små bokstäver.
+## 🚀 User Stories Implemented
+| ID   | Feature                  | Status | Scenario Count |
+|------|--------------------------|--------|----------------|
+| US01 | View Friend List         | ✅     | 3              |
+| US02 | Edit Contact Info        | ✅     | 4              |
+| US03 | Add New Contacts         | ✅     | 5              |
+| US04 | Remove Friends           | ✅     | 3              |
+| US05 | Search Contacts (Case-Insensitive)| ✅ | 6              |
 
 ## 🛠️ Tech Stack
+- **Testing Framework**: Behave (BDD)
+- **Browser Automation**: Playwright
+- **Language**: Python 3.10+
+- **Reporting**: Built-in Behave reports
+- **CI/CD**: GitHub Actions
+- **OS**: Cross-platform (Windows/Linux/macOS)
 
-- ### **Test Framework**: Behave (Gherkin + Python)
-- ### **Browser Automation**: Playwright
-- ### **Språk**: Python 3.x
+## ⚙️ Setup & Execution
+```bash
+# 1. Clone repository
+git clone https://github.com/KhunKanya/mina_vanner_testautomatisering.git
+cd mina_vanner_testautomatisering
 
+# 2. Install dependencies
+pip install -r requirements.txt
 
-## 📁 Mappstruktur
+# 3. Install Playwright browsers
+playwright install
 
-``` text
+# 4. Run tests (headless mode)
+behave
 
-├── .github/
-│   └── workflows/
-│       └── main.yml
-├── src/
-│   ├── features/
-│   │   ├── add_contact.feature
-│   │   ├── delete_contact.feature
-│   │   ├── search_contact.feature
-│   │   └── view_all_contact.feature
-│   ├── pages/
-│   │   └── base_page.py
-│   ├── steps/
-│   │   ├── add_contact.py
-│   │   ├── delete_contact.py
-│   │   ├── search_contact.py
-│   │   └── view_all_contact.py
-│   └── environment.py
-├── requirements.txt
-└── README.md
-```
-
+# 5. Run with UI (headed mode)
+behave --tags=@ui -D headed=true
