@@ -6,8 +6,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://python.org)
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI/CD-black?logo=githubactions)](https://github.com/features/actions)
 
-Automated test solution for contact management features, implementing BDD methodology with industry-standard tools. Validates critical user workflows for friend management systems.
-
+Automated test solution for **[My Contacts](https://forverkliga.se/JavaScript/my-contacts/#/)**, implementing BDD methodology to validate critical friend management workflows.
 ## 🔍 Project Overview
 Automates testing of core functionalities:
 - **Contact Management** (Add/View/Edit/Delete)
